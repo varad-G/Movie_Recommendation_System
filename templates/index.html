@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+      background-image: url("bg.jpg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+h1 {
+  text-shadow: 2px 2px 5px rgb(255, 102, 0);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+margin-left : 19%}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<body>
+<div class="bg">
+  <div class="search-container">
+   
+<h1 align="center" style="color:white;" ><br>Movie Recommendation System</h1>
+<button type="submit"><i class="fa fa-search"></i></button>
+    
+  </div>
+
+<br>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>{{content[1]}}</h3>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h3>{{content[2]}}</h3>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>{{content[3]}}</h3>
+      </div>
+    </div>
+</div>
+
+  <br>
+<div class = "row">
+  <div class="column">
+    <div class="card">
+      <h3>{{content[4]}}</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>{{content[5]}}</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>{{content[6]}}</h3>
+    </div>
+  </div>
+  
+</div>
+<br>
+
+<div class = "row">  
+  <div class="column">
+    <div class="card">
+      <h3>{{content[7]}}</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>{{content[8]}}</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>{{content[9]}}</h3>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
